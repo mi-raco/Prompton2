@@ -1,4 +1,7 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true }
+  modules: ['@nuxtjs/i18n', "@nuxt/ui"],
+  i18n: {
+    vueI18n: './public/locales/i18n.config.ts'
+  },
+  compatibilityDate: '2024-10-08'
 })
